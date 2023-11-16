@@ -1,0 +1,222 @@
+@media screen and (max-width:300px) {
+    :root{
+        font-size: 12px;
+    }
+}
+ /* container */
+@media screen and (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+ 
+  @media screen and (max-width: 1400px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .container {
+      padding-inline: 15px;
+    }
+  }
+  /* end */
+  /* nav bar */
+  @media screen and (max-width: 1200px) {
+    .menu{
+        display: block;
+      }
+      nav ul{
+        transform: translateX(100%);
+        position: absolute;
+        flex-direction: column;
+        width: 350px;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: var(--background-color);
+        padding-inline: 10px;
+        gap: 0;
+      }
+      nav ul li{
+        padding-block: 16px;
+      }
+      nav ul li.close {
+        display: block;
+        text-align: left auto;
+      }
+      nav div.mode{
+        margin: auto;
+        margin-right: 20px;
+      }     
+  }
+  @media screen and (max-width: 992px) {
+    nav .container{
+      flex-direction: row;
+    }
+  }
+  
+  
+   /* end */
+  
+  /* home section */
+  @media screen and (min-width: 1200px) {
+    header{
+        min-height: 100vh;
+    }
+
+  }
+  @media screen and (max-width: 992px) {
+    .container {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    header .container > * {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header .container .home-content{
+        margin-top: 30px;
+    }
+    .home-content .home-btns .btn1{
+        border-radius: 100vh;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .home-content .home-btns{
+        flex-direction: column;
+    }
+  }
+/* end */
+/* chefs section */
+@media screen and (max-width: 992px) {
+  .chefs-cards .card {
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+}
+@media screen and (max-width: 768px) {
+  .chefs-cards .card {
+    width: 100%;
+  }
+}
+/* end */
+/* gallery section */
+@media screen and (max-width: 1400px) {
+  .gallery-photos {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery-photos {
+    height: 845px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .gallery-photos {
+    height: 1405px;
+  }
+
+  .gallery-photos picture {
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+
+  .gallery .pizza {
+    order: 1;
+  }
+  .gallery .fried {
+    order: 6;
+  }
+  .gallery .omelette {
+    order: 4;
+  }
+  .gallery .kofta {
+    order: 7;
+  }
+  .gallery .burger {
+    order: 2;
+  }
+  .gallery .pizza-slices {
+    order: 3;
+  }
+  .gallery .steak {
+    order: 5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-photos {
+    height: auto;
+  }
+  .gallery-photos picture {
+    width: 100%;
+  }
+}
+/* end */
+/* contact section */
+@media screen and (max-width: 992px) {
+  .contact .input-group input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .details > div {
+    width: 100%;
+  }
+}
+/* end */
+/* footer section */
+@media screen and (max-width: 1200px) {
+  footer .container :is(.about, .contact-details) {
+    width: calc(calc(100% - var(--gap)) / 2);
+    order: 1;
+  }
+
+  footer .container :is(.subscription) {
+    width: 100%;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .container :is(.about, .contact-details, .subscription) {
+    width: 100%;
+    order: 0;
+  }
+  footer .sunscription-group button{
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer .sunscription-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* end */

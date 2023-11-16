@@ -1,0 +1,21 @@
+
+:root:has(.mode input:checked){
+    --main-color: #fff;
+    --header-color: #fff;
+    --main2-color: #c17d1f;
+    --header2-color: #9f9f9f;
+    --secondary-color: #7F7F90;
+    --secondary2-color: #7d7d7d;
+    --background-color: #171717;
+    --background2-color: #252525;
+    --hover-btn: #d78c23;
+    --opacity: #0009;
+    --background-image: url(../img/team-shape-dark.svg);
+}
+
+body:has(.mode input:checked) .mode .light{
+    display: block;
+}
+body:has(.mode input:checked) .mode .dark{
+    display: none;
+}
